@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
+gem 'sinatra-contrib'
 gem 'omniauth', '~> 1.9.1'
-gem 'omniauth-facebook', '~> 9.0.0'
+gem 'omniauth-mercadolibre'
+gem 'omniauth-oauth2'
 gem 'http'
 
 group :test do

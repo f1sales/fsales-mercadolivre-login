@@ -36,6 +36,7 @@ GEM
     llhttp-ffi (0.4.0)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
+    multi_json (1.15.0)
     multi_xml (0.6.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -49,8 +50,9 @@ GEM
     omniauth (1.9.2)
       hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
-    omniauth-facebook (9.0.0)
-      omniauth-oauth2 (~> 1.2)
+    omniauth-mercadolibre (0.0.4)
+      omniauth (~> 1.2, >= 1.2.1)
+      omniauth-oauth2 (~> 1.1, >= 1.1.2)
     omniauth-oauth2 (1.7.3)
       oauth2 (>= 1.4, < 3)
       omniauth (>= 1.9, < 3)
@@ -81,6 +83,12 @@ GEM
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.0.6)
       tilt (~> 2.0)
+    sinatra-contrib (3.0.6)
+      multi_json
+      mustermann (~> 3.0)
+      rack-protection (= 3.0.6)
+      sinatra (= 3.0.6)
+      tilt (~> 2.0)
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
@@ -102,10 +110,12 @@ DEPENDENCIES
   faker
   http
   omniauth (~> 1.9.1)
-  omniauth-facebook (~> 9.0.0)
+  omniauth-mercadolibre
+  omniauth-oauth2
   rack-test
   rspec
   sinatra
+  sinatra-contrib
   webmock
 
 BUNDLED WITH
